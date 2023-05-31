@@ -12,14 +12,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       title: 'Lab 1 Work with Tabs and Display images from the internet',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(
-            seedColor: const Color.fromARGB(255, 78, 0, 211)),
-        useMaterial3: true,
-      ),
-      home: const MyHomePage(),
+      home: MyHomePage(),
       debugShowCheckedModeBanner: false,
     );
   }

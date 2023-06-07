@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mobile/widget/bai1.dart';
 
 void main() {
   runApp(const MyApp());
@@ -28,7 +29,9 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return const SafeArea(
-      child: Center(),
+      child: Scaffold(
+        body: Bai1(),
+      ),
     );
   }
 }

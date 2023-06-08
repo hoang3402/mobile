@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      title: 'Lab 1 Work with Tabs and Display images from the internet',
+      title: 'Lab 5 Drag a UI element',
       home: MyHomePage(),
       debugShowCheckedModeBanner: false,
     );

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mobile/widget/bai1.dart';
+import 'package:mobile/widget/bai2.dart';
 
 void main() {
   runApp(const MyApp());
@@ -31,19 +32,21 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: DefaultTabController(
-        length: 1,
+        length: 2,
         child: Scaffold(
           appBar: AppBar(
             title: Text(title),
             bottom: const TabBar(
               tabs: [
-                Icon(Icons.abc),
+                Text('Bài 1'),
+                Text('Bài 2'),
               ],
             ),
           ),
           body: const TabBarView(
             children: [
               Bai1(),
+              Bai2(),
             ],
           ),
         ),

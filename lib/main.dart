@@ -27,7 +27,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  String title = ':D';
+  String title = 'Animate a page route transition';
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -35,7 +35,7 @@ class _MyHomePageState extends State<MyHomePage> {
         length: 2,
         child: Scaffold(
           appBar: AppBar(
-            title: Text(title),
+            title: Center(child: Text(title)),
             bottom: const TabBar(
               tabs: [
                 Text('Bài 1'),

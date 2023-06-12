@@ -22,7 +22,10 @@ class DraggingListItem extends StatelessWidget {
           width: 150,
           child: Opacity(
             opacity: 0.85,
-            child: photoProvider,
+            child: Image(
+              image: photoProvider,
+              fit: BoxFit.cover,
+            ),
           ),
         ),
       ),
